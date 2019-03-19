@@ -6,7 +6,7 @@
 class UhHospital(object):
     """Field Maps for UH Hospital"""
 
-    PATIENT_FIELDS = {
+    patient_fields = {
         "SITE_ID": "",
         "PT_MRN": "",
         "PT_LAST_NAME": "",
@@ -23,7 +23,7 @@ class UhHospital(object):
         "PT_HEIGHT": "",
     }
 
-    ALLERGY_FIELDS = {
+    allergy_fields = {
         "SITE_ID": "",
         "PT_MRN": "",
         "ALLERGY_ALRGN": "",
@@ -38,7 +38,7 @@ class UhHospital(object):
         "ALLERGY_STATUS": "",
     }
 
-    AMBULATORY_IMAGING_REPORT_FEILDS = {
+    ambulatory_imaging_report_feilds = {
         "SITE_ID": "",
         "PT_MRN": "",
         "ORD_ID": "",
@@ -54,7 +54,7 @@ class UhHospital(object):
         "ENC_ID": "",
     }
 
-    AMBULATORY_MEDICATION_REPORT_FIELDS = {
+    ambulatory_medication_report_fields = {
         "SITE_ID": "",
         "PT_MRN": "",
         "ORD_ID": "",
@@ -70,7 +70,7 @@ class UhHospital(object):
         "ENC_ID": "",
     }
 
-    AP_REPORT_FIELDS = {
+    ap_report_fields = {
         "SITE_ID": "",
         "PT_MRN": "",
         "AP_ORDER_ID": "",
@@ -84,7 +84,7 @@ class UhHospital(object):
         "ENC_ID": "",
     }
 
-    ENCOUNTERS_FIELDS = {
+    encounters_fields = {
         "SITE_ID": "",
         "PT_MRN": "",
         "ENC_ID": "",
@@ -107,7 +107,7 @@ class UhHospital(object):
         "ADMIT_DX_TEXT": "",
     }
 
-    IMAGING_REPORT_FIELDS = {
+    imaging_report_fields = {
         "SITE_ID": "",
         "PT_MRN": "",
         "ORD_ID": "",
@@ -124,7 +124,7 @@ class UhHospital(object):
         "ENC_ID": "",
     }
 
-    LAB_REPORT_FIELDS = {
+    lab_report_fields = {
         "SITE_ID": "",
         "PT_MRN": "",
         "LAB_ORDER_ID": "",
@@ -142,7 +142,7 @@ class UhHospital(object):
         "ENC_ID": "",
     }
 
-    MEDICATION_FIELDS = {
+    medication_fields = {
         "SITE_ID": "",
         "PT_MRN": "",
         "ORD_ID": "",
@@ -162,7 +162,7 @@ class UhHospital(object):
         "ENC_ID": "",
     }
 
-    NOTES_FIELDS = {
+    notes_fields = {
         "SITE_ID": "",
         "PT_MRN": "",
         "NOTE_ID": "",
@@ -176,7 +176,7 @@ class UhHospital(object):
         "NOTE_TEXT": "",
         "ENC_ID": "",
     }
-    PROBLEM_FIELDS = {
+    problem_fields = {
         "SITE_ID": "",
         "PT_MRN": "",
         "PROB_ID": "",
@@ -190,23 +190,23 @@ class UhHospital(object):
         "ENC_ID": "",
     }
 
-    PROVIDER_FIELDS = {
-        "SITE_ID",
-        "IDENTITY_ID",
-        "PROV_LAST_NAME",
-        "PROV_FIRST_NAME",
-        "SPECIALTY",
-        "PHONE",
-        "EMAIL",
-        "PROVIDER_TYPE",
-        "ADDR_LINE_1",
-        "ADDR_LINE_2",
-        "ADDR_LINE_3",
-        "CITY",
-        "STATE",
-        "ZIP",
+    provider_fields = {
+        "SITE_ID":"",
+        "IDENTITY_ID":"",
+        "PROV_LAST_NAME":"",
+        "PROV_FIRST_NAME":"",
+        "SPECIALTY":"",
+        "PHONE":"",
+        "EMAIL":"",
+        "PROVIDER_TYPE":"",
+        "ADDR_LINE_1":"",
+        "ADDR_LINE_2":"",
+        "ADDR_LINE_3":"",
+        "CITY":"",
+        "STATE":"",
+        "ZIP":"",
     }
-    SITE_FIELDS = {
+    site_fields = {
         "SITE_ID": "",
         "SITE_NAME": "",
         "PHONE": "",
