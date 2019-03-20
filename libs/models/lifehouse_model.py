@@ -1,0 +1,186 @@
+"""
+Lighthouse Model
+"""
+
+
+class Lifehouse(object):
+
+    ap_report_fields = {
+        "siteId": "",
+        "patientMrn": "",
+        "orderId": "",
+        "orderStatus": "",
+        "resultDate": "",
+        "collectionDate": "",
+        "specimenSources": "",
+        "orderingMd": "",
+        "resultMd": "",
+        "resultText": "",
+        "encounterId": "",
+    }
+
+    allergy_fields = {
+        "siteId": "",
+        "patientMrn": "",
+        "allergen": "",
+        "allergenType": "",
+        "allergyType": "",
+        "reactions": "",
+        "severityLevel": "",
+        "reactionComment": "",
+        "enteredDate": "",
+    }
+
+    encounter_fields = {
+        "patientMrn": "",
+        "encId": "",
+        "admitDate": "",
+        "dischargeDate": "",
+        "admittingMd": "",
+        "attendingMd": "",
+        "referringMd": "",
+        "pcpMd": "",
+        "consultingMd": "",
+        "encMajorType": "",
+        "encPatientClass": "",
+        "encAdmitSource": "",
+        "encStatus1": "",
+        "encStatus2": "",
+        "encAdmissionType": "",
+        "erComplaintText": "",
+        "encDx": "",
+        "admittingDx": "",
+        "admittingDxText": "",
+    }
+
+    imaging_report_fields = {
+        "siteId": "",
+        "patientMrn": "",
+        "orderId": "",
+        "orderingMd": "",
+        "authorizingMd": "",
+        "finalMd": "",
+        "dictatingMd": "",
+        "imageCollectionDate": "",
+        "imageResultDate": "",
+        "addendumNoteId": "",
+        "addendumDate": "",
+        "imageResultText": "",
+        "addendumResultText": "",
+        "encounterId": "",
+    }
+
+    lab_report_fields = {
+        "siteId": "",
+        "patientMrn": "",
+        "labOrderId": "",
+        "labLineNumber": "",
+        "labLoinc": "",
+        "labProcedure": "",
+        "labResultCollectionDate": "",
+        "labResultDate": "",
+        "labResultValue": "",
+        "labResultUom": "",
+        "labDataType": "",
+        "resultingLab": "",
+        "labProcedureComments": "",
+        "labTestComments": "",
+        "encounterId": "",
+    }
+
+    medication_order_fields = {
+        "siteId": "",
+        "patientMrn": "",
+        "orderId": "",
+        "orderDate": "",
+        "startDate": "",
+        "endDate": "",
+        "frequency": "",
+        "numDoses": "",
+        "medicationName": "",
+        "atcCode": "",
+        "dosageMin": "",
+        "dosageMax": "",
+        "dosageUnits": "",
+        "orderingProvider": "",
+        "orderingProviderLastName": "",
+        "orderingProviderMiddleName": "",
+        "orderingProviderFirstName": "",
+        "authorizingProvider": "",
+        "authorizingProviderLastName": "",
+        "authorizingProviderMiddleName": "",
+        "authorizingProviderFirstName": "",
+        "verifyingProvider": "",
+        "verifyingProviderLastName": "",
+        "verifyingProviderMiddleName": "",
+        "verifyingProviderFirstName": "",
+        "instructions": "",
+        "prnReasons": "",
+        "encounterId": "",
+        "transactionDate": "",
+        "lastEditedDate": "",
+        "dispensedDate": "",
+    }
+
+    patient_fields = {
+        "siteId": "",
+        "patientMrn": "",
+        "lastName": "",
+        "firstName": "",
+        "middleName": "",
+        "birthDate": "",
+        "ethnicity": "",
+        "gender": "",
+        "race": "",
+        "zip": "",
+        "dateOfDeath": "",
+        "mortalityStatus": "",
+        "weight": "",
+        "height": "",
+    }
+
+    note_fields = {
+        "siteId": "",
+        "patientMrn": "",
+        "noteId": "",
+        "encMajorType": "",
+        "noteDos": "",
+        "noteType": "",
+        "noteCreateProv": "",
+        "noteSignProv": "",
+        "noteFirstSignDttm": "",
+        "noteCurrAuth": "",
+        "noteText": "",
+        "encId": "",
+    }
+
+    problem_list_fields = {
+        "siteId": "",
+        "patientMrn": "",
+        "problemID": "",
+        "problemDX": "",
+        "problemDescription": "",
+        "problemICD": "",
+        "problemNotedDttm": "",
+        "problemResolvedDttm": "",
+        "problemStatus": "",
+        "problemComment": "",
+        "problemEncId": "",
+    }
+
+    provider_fields = {
+        "siteId": "",
+        "providerId": "",
+        "lastName": "",
+        "firstName": "",
+        "specialty": "",
+        "phone": "",
+        "email": "",
+        "providerType": "",
+        "addressLine1": "",
+        "addressLine2": "",
+        "addressLine3": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+    }
