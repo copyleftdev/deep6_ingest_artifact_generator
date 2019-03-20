@@ -1,0 +1,2 @@
+class CDE(object):
+    pass
