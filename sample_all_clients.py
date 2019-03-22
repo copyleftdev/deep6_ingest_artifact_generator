@@ -50,7 +50,7 @@ def gen_athena(patient_mrn, note_seed):
     patient['sex'] = sex
     patient['dob'] = dob
     patient['status'] = 'Alive'
-    note['ptMrn'] = patient_mrn
+    note['pMrn'] = patient_mrn
     note['noteText'] = note_seed
     return {"patient": patient, "note": note}
 
