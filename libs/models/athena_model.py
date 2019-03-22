@@ -2,6 +2,7 @@
 This module stores Athena Model
 """
 
+
 class Athena(object):
     """Models for Athena Fields"""
 
@@ -252,6 +253,32 @@ class Athena(object):
         "city": "",
         "state": "",
         "zip": "",
+    }
+
+    note_fields = {
+        "stub_1":"",
+        "stub_2":"",
+        "stub_3":"",
+        "stub_4":"",
+        "stub_5":"",
+        "stub_6":"",
+        "stub_7":"",
+        "stub_8":"",
+        "stub_9":"",
+        "stub_10":"",
+        "stub_11":"",
+        "siteId":"",
+        "ptMrn":"",
+        "noteId":"",
+        "encounterType":"",
+        "noteDos":"",
+        "noteType":"",
+        "noteCreateProvider":"",
+        "noteSignProvider":"",
+        "noteFirstSignDttm":"",
+        "noteCurrentAuth":"",  # "contactDateReal":"", "line":"", "sort":"",
+        "noteText":"",
+        "encId":"",
     }
 
     social_history_fields = {

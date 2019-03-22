@@ -105,3 +105,6 @@ venv.bak/
 sandbox.py
 notes.txt
 .vscode
+
+db/
+data/

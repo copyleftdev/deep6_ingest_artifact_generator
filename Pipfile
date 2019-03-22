@@ -10,6 +10,8 @@ pylint = "*"
 faker = "*"
 tinydb = "*"
 pytest = "*"
+neo4j = "*"
+py2neo = "*"
 
 [requires]
 python_version = "3.7"
