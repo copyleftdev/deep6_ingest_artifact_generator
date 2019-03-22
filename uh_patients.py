@@ -1,10 +1,10 @@
-from tinydb import TinyDB, Query
-from libs.artifact_generator import ArtifactManager as am
+import pytest
+from random import randint
+from faker import Faker
+fake = Faker()
+from libs.models.athena_model import Athena as am
 
-for x in range(10):
-
-    a = am("444543356")
-    patient = a.generate_patient_record()
-    note = a.generate_notes("sample")
-    print(patient)
-    print(note)
+patientid = randint(00000000, 99999999)
+patient = am.patient_fields
+patient['ptMrn'] = str(patientid)
+patient['firstName'] = "Don"
