@@ -1,0 +1,113 @@
+{
+  "providerDetails" : null,
+  "patient" : null,
+  "d6Analyzed" : {
+    "dataElements" : [ {
+      "cdeId" : "DE0221198",
+      "begin" : 482,
+      "end" : 496,
+      "value" : "10.0",
+      "origin" : "$['event']['contents'][2]['value']"
+    } ],
+    "codes" : [ ],
+    "freeTextPhrases" : [ ]
+  },
+  "metadata" : {
+    "batchId" : null,
+    "provenance" : {
+      "eventId" : "note.000022532.174",
+      "agents" : [ ],
+      "entities" : [ "record.note.000022532.174" ],
+      "activities" : [ ],
+      "derivations" : [ {
+        "from" : "record.note.000022532.174",
+        "to" : ""
+      } ],
+      "attributions" : [ {
+        "from" : "record.note.000022532.174",
+        "to" : ""
+      } ],
+      "generations" : [ {
+        "from" : "record.note.000022532.174",
+        "to" : "ingestion"
+      } ]
+    },
+    "dropId" : "19700101",
+    "sourceFile" : "d6extract_nts_19700101.csv",
+    "ingestionDate" : 1553726912351
+  },
+  "schema" : {
+    "name" : "Event",
+    "parent" : "patient.000022532"
+  },
+  "event" : {
+    "providers" : [ {
+      "id" : "1080264",
+      "lastName" : "MICHAELS",
+      "firstName" : "DANKA",
+      "middleName" : "KATARINA",
+      "fullName" : "MICHAELS, DANKA",
+      "title" : "Internal Medicine",
+      "role" : "DICTATING_MD"
+    }, {
+      "id" : "1018562",
+      "lastName" : "BHASKER",
+      "firstName" : "MOHAN",
+      "middleName" : "",
+      "fullName" : "BHASKER, MOHAN",
+      "title" : "Internal Medicine",
+      "role" : "REFERRING_MD"
+    } ],
+    "contents" : [ {
+      "codes" : [ ],
+      "type" : "NOTE_TYPE",
+      "value" : "Discharge summary",
+      "annotatableForNLP" : false,
+      "freeTextSearchable" : false
+    }, {
+      "codes" : [ ],
+      "type" : "ENCOUNTER_MAJOR_TYPE",
+      "value" : "UNSPECIFIED",
+      "annotatableForNLP" : false,
+      "freeTextSearchable" : false
+    }, {
+      "codes" : [ ],
+      "type" : "NOTE_TEXT",
+      "value" : "MimicAdmissionRow Date:  [**2151-7-16**]       Discharge Date:  [**2151-8-4**]\n\n\nService:\nADDENDUM:\n\nRADIOLOGIC STUDIES:  Radiologic studies also included a chest\nCT, which confirmed cavitary lesions in the left lung apex\nconsistent with infectious process/tuberculosis.  This also\nmoderate-sized left pleural effusion.\n\nHEAD CT:  Head CT showed no intracranial hemorrhage or mass\neffect, but old infarction consistent with past medical\nhistory.\n\nABDOMINAL CT:  Abdominal CT showed lesions of\nT10 and sacrum most likely secondary to osteoporosis. These can\nbe followed by repeat imaging as an outpatient.\n\n\n\n                            [**First Name8 (NamePattern2) **] [**First Name4 (NamePattern1) 1775**] [**Last Name (NamePattern1) **], M.D.  [**MD Number(1) 1776**]\n\nDictated By:[**Hospital 1807**]\nMEDQUIST36\n\nD:  [**2151-8-5**]  12:11\nT:  [**2151-8-5**]  12:21\nJOB#:  [**Job Number 1808**]\n",
+      "annotatableForNLP" : true,
+      "freeTextSearchable" : true
+    } ],
+    "date" : 1249369200000,
+    "documentType" : "physicianNote",
+    "encounterIds" : [ ],
+    "id" : "note.000022532.174",
+    "uuid" : "648df7735fbf50055f623444df0a83ef",
+    "physicianNote" : {
+      "patientType" : "UNSPECIFIED",
+      "encounterType" : null,
+      "createdDate" : 1249369200000,
+      "firstSignedDate" : null,
+      "noteId" : "174",
+      "noteLineNo" : null,
+      "dateOfService" : 1249369200000,
+      "lastFiledDate" : null,
+      "noteType" : "Discharge summary",
+      "visitType" : null,
+      "noteText" : "MimicAdmissionRow Date:  [**2151-7-16**]       Discharge Date:  [**2151-8-4**]\n\n\nService:\nADDENDUM:\n\nRADIOLOGIC STUDIES:  Radiologic studies also included a chest\nCT, which confirmed cavitary lesions in the left lung apex\nconsistent with infectious process/tuberculosis.  This also\nmoderate-sized left pleural effusion.\n\nHEAD CT:  Head CT showed no intracranial hemorrhage or mass\neffect, but old infarction consistent with past medical\nhistory.\n\nABDOMINAL CT:  Abdominal CT showed lesions of\nT10 and sacrum most likely secondary to osteoporosis. These can\nbe followed by repeat imaging as an outpatient.\n\n\n\n                            [**First Name8 (NamePattern2) **] [**First Name4 (NamePattern1) 1775**] [**Last Name (NamePattern1) **], M.D.  [**MD Number(1) 1776**]\n\nDictated By:[**Hospital 1807**]\nMEDQUIST36\n\nD:  [**2151-8-5**]  12:11\nT:  [**2151-8-5**]  12:21\nJOB#:  [**Job Number 1808**]\n",
+      "resultLabel" : null,
+      "resultValue" : null,
+      "resultUnits" : null
+    },
+    "allergy" : null,
+    "demographic" : null,
+    "encounter" : null,
+    "episodeItem" : null,
+    "harProcedure" : null,
+    "harDiagnosis" : null,
+    "medicationAdministrationRecord" : null,
+    "problemList" : null,
+    "socialHistory" : null,
+    "postOpNotes" : null,
+    "report" : null
+  }
+}
