@@ -13,6 +13,7 @@ pytest = "*"
 neo4j = "*"
 py2neo = "*"
 python-cypher = "*"
+arrow = "*"
 
 [requires]
 python_version = "3.7"
