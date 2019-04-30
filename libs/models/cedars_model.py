@@ -183,7 +183,7 @@ class Cedars(object):
         "startDate": "",
         "endDate": "",
     }
-    patient_feilds = {
+    patient_fields = {
         "patientMrn": "",
         "lastName": "",
         "firstName": "",

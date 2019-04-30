@@ -2,6 +2,7 @@
 Mimic Model
 """
 
+
 class Mimic(object):
     """Mimic Fields"""
 
@@ -127,4 +128,14 @@ class Mimic(object):
         "firstName": "",
         "providerType": "",
         "specialty": "",
+    }
+    patient_fields = {
+        "rowId": "",
+        "subjectId": "",
+        "gender": "",
+        "dateOfBirth": "",
+        "dateOfDeath": "",
+        "dodHospital": "",
+        "dodSSN": "",
+        "expireFlag": "",
     }
