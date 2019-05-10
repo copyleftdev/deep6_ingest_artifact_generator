@@ -104,7 +104,7 @@ venv.bak/
 .mypy_cache/
 sandbox.py
 notes.txt
-.vscode
+.vscode/
 
 db/
 data/

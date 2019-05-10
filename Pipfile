@@ -14,6 +14,7 @@ neo4j = "*"
 py2neo = "*"
 python-cypher = "*"
 arrow = "*"
+elasticsearch = "*"
 
 [requires]
 python_version = "3.7"
