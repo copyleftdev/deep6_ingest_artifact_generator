@@ -204,7 +204,7 @@ class Cedars(object):
         "phoneNumberHome": "",
     }
 
-    note_fields = {
+    p_note_fields = {
         "patientMrn": "",
         "noteId": "",
         "noteLineNo": "",

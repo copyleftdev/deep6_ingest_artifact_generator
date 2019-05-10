@@ -2,7 +2,7 @@ import pytest
 from random import randint
 from random import choice
 from faker import Faker
-from libs.models.athena_model import Athena as am
+from libs.models.cedars_model import Cedars as cm
 from libs.utils.db import DBHelper
 from libs.utils.csv import Writer
 
@@ -13,17 +13,22 @@ patient_csv_cur = Writer()
 note_csv_cur = Writer()
 
 
-for x in range(100):
+for x in range(20):
     patientid = randint(00000000, 99999999)
-    patient = am.patient_fields
-    note = am.note_fields
-    patient['patientMrn'] = str(patientid)
-    patient['firstName'] = fake.first_name()
-    patient['lastName'] = fake.last_name()
-    patient['middleName'] = fake.last_name()
-    patient['birthDate'] = fake.iso8601()
-    note['patientMrn"'] = patientid
-    note['noteText'] = "insert sample note here."
+    patient = cm.patient_fields
+    note = cm.p_note_fields
+    patient["patientMrn"] = str(patientid)
+    patient["firstName"] = fake.first_name()
+    patient["lastName"] = fake.last_name()
+    patient["middleName"] = fake.last_name()
+    patient["birthDate"] = fake.iso8601()
+    patient["mortalityStatus"] = "ALIVE"
+    patient["email"] = fake.ascii_safe_email()
+    patient["phoneNumberWork"] = fake.phone_number()
+    patient["phoneNumberCell"] = fake.phone_number()
+    patient["phoneNumberHome"] = fake.phone_number()
+    note["patientMrn"] = patientid
+    note["noteText"] = "insert sample note here."
     patient_db_cur.insert_record(payload=patient)
     notes_db_cur.insert_record(payload=note)
 
