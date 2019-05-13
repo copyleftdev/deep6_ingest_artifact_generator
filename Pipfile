@@ -16,6 +16,8 @@ py2neo = "*"
 python-cypher = "*"
 arrow = "*"
 elasticsearch = "*"
+requests = "*"
+moment = "*"
 
 [requires]
 python_version = "3.7"
