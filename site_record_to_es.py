@@ -9,7 +9,8 @@ fake = Faker()
 site_ids = [11111111,22222222,33333333,44444444,
                55555555,66666666,77777777,88888888,99999999]
 
-es_host = 'http://es1.qa1.deep6.ai:9200/site-index-v1/doc'
+site_es_host = 'http://localhost:9200/site-index-v1/doc'
+patient_es_host = "http://localhost:9200/patient-index-v5.1/doc"
 post_head = {"Content-Type": "application/json"}
 
 
@@ -112,11 +113,11 @@ def gen_site_ids():
         site_record_pl['siteId'] = site
         site_record_pl['siteName'] = "Test Site #{}".format(insert_index)
         site_record_pl['url'] = "http://www.example.com"
-        req = requests.put(es_host + "/{}".format(insert_index), headers=post_head,data=json.dumps(site_record_pl))
+        req = requests.put(site_es_host + "/{}".format(insert_index), headers=post_head,data=json.dumps(site_record_pl))
         insert_index += 1
         print(req.json())
 
-def gen_patient():
+def gen_patient(doc_num):
     age = random.randint(18, 84)
     SEX_RND = random.choice(['M','F'])
     patient_record_pl['gender'] = SEX_RND
@@ -133,10 +134,11 @@ def gen_patient():
     patient_record_pl['hasResearchOptOut'] = random.choice([True, False])
     patient_record_pl['isConfidential'] = random.choice([True, False])
     patient_record_pl['mrn'] = str(uuid.uuid4()).replace("-","")
+    req = requests.put(patient_es_host+ "/{}".format(doc_num), headers=post_head,data=json.dumps(patient_record_pl))
     
 
-    print(patient_record_pl)
+    print(req.json())
 
 
-for x in range(100):
-    gen_patient()
+for x in range(1, 10000):
+    gen_patient(x)
