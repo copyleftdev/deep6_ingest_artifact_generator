@@ -94,7 +94,3 @@ patient_records = patient_db_cur.get_all_record()
 note_records = notes_db_cur.get_all_record()
 patient_csv_cur.save(record=patient_records, file_loc="data/sample_mdanderson_patients.csv")
 note_csv_cur.save(record=note_records, file_loc="data/sample_mdanderson_notes.csv")
-
-
-
-gen_records(site_id=site_id, num=10)
