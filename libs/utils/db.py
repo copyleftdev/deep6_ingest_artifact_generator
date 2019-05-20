@@ -9,8 +9,8 @@ from tinydb import TinyDB, Query
 class DBHelper(object):
 
     def __init__(self, prefix):
-        db_name = str(int(time.time()))
-        self.db = TinyDB('db/{}_{}.db'.format(prefix, db_name))
+        
+        self.db = TinyDB('db/{}.db'.format(prefix))
 
     def insert_record(self, payload):
         """Insert Record"""

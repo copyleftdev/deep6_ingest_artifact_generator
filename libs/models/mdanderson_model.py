@@ -4,7 +4,6 @@ MDAnderson Model
 
 
 class MdAndersion(object):
-    """danderson fields"""
 
     allergy_fields = {
         "siteId": "",

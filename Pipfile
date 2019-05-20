@@ -18,6 +18,7 @@ arrow = "*"
 elasticsearch = "*"
 requests = "*"
 moment = "*"
+black = "*"
 
 [requires]
 python_version = "3.7"
