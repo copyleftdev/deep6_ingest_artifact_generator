@@ -7,7 +7,7 @@ class MdAndersion(object):
 
     allergy_fields = {
         "siteId": "",
-        "patientMrn": "",
+        "PT_MRN": "",
         "allergen": "",
         "allergenType": "",
         "allergyType": "",
@@ -18,7 +18,7 @@ class MdAndersion(object):
     }
     encounter_fields = {
         "siteId": "",
-        "ptMrn": "",
+        "PT_MRN": "",
         "encId": "",
         "encAdmitDttm": "",
         "encDischargeDttm": "",
@@ -41,7 +41,7 @@ class MdAndersion(object):
 
     genomic_report_fields = {
         "siteId": "",
-        "ptMrn": "",
+        "PT_MRN": "",
         "reportDttm": "",
         "reportId": "",
         "reportText": "",
@@ -49,7 +49,7 @@ class MdAndersion(object):
     }
     imaging_report_fields = {
         "siteId": "",
-        "ptMrn": "",
+        "PT_MRN": "",
         "orderId": "",
         "orderProvider": "",
         "authProvider": "",
@@ -65,7 +65,7 @@ class MdAndersion(object):
     }
     lab_report_fields = {
         "siteId": "",
-        "ptMrn": "",
+        "PT_MRN": "",
         "labOrderId": "",
         "labLineNo": "",
         "labLoinc": "",
@@ -82,7 +82,7 @@ class MdAndersion(object):
     }
     mar_fields = {
         "siteId": "",
-        "ptMrn": "",
+        "PT_MRN": "",
         "ordId": "",
         "ordMedDttm": "",
         "ordMedStartDttm": "",
@@ -103,7 +103,7 @@ class MdAndersion(object):
     }
     note_field = {
         "siteId": "",
-        "ptMrn": "",
+        "PT_MRN": "",
         "noteId": "",
         "encounterType": "",
         "noteDos": "",
@@ -117,7 +117,7 @@ class MdAndersion(object):
     }
     pathology_report_fields = {
         "siteId": "",
-        "ptMrn": "",
+        "PT_MRN": "",
         "apOrderId": "",
         "apOrderStsCd": "",
         "resultDttm": "",
@@ -131,7 +131,7 @@ class MdAndersion(object):
 
     patient_fields = {
         "siteId": "",
-        "ptMrn": "",
+        "PT_MRN": "",
         "lastName": "",
         "firstName": "",
         "middleName": "",

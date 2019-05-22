@@ -10,47 +10,14 @@ from libs.utils.csv import Writer
 
 
 ethnicity_list = [
-    "ASIAN - VIETNAMESE",
-    "MIDDLE EASTERN",
-    "HISPANIC/LATINO - CENTRAL AMERICAN (OTHER)",
-    "ASIAN - JAPANESE",
-    "BLACK/CAPE VERDEAN",
-    "NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER",
-    "SOUTH AMERICAN",
-    "HISPANIC/LATINO - COLOMBIAN",
-    "WHITE - OTHER EUROPEAN",
-    "ASIAN - FILIPINO",
-    "ASIAN - CHINESE",
-    "HISPANIC/LATINO - HONDURAN",
-    "HISPANIC/LATINO - PUERTO RICAN",
-    "ASIAN - ASIAN INDIAN",
-    "AMERICAN INDIAN/ALASKA NATIVE FEDERALLY RECOGNIZED TRIBE",
-    "BLACK/AFRICAN AMERICAN",
-    "ASIAN - CAMBODIAN",
-    "WHITE",
-    "ASIAN - THAI",
-    "BLACK/AFRICAN",
-    "PATIENT DECLINED TO ANSWER",
-    "HISPANIC/LATINO - MEXICAN",
-    "BLACK/HAITIAN",
-    "HISPANIC/LATINO - GUATEMALAN",
-    "PORTUGUESE",
-    "ASIAN - OTHER",
-    "UNKNOWN/NOT SPECIFIED",
-    "OTHER",
-    "HISPANIC/LATINO - SALVADORAN",
-    "WHITE - RUSSIAN",
-    "MULTI RACE ETHNICITY",
-    "HISPANIC/LATINO - DOMINICAN",
-    "WHITE - EASTERN EUROPEAN",
-    "WHITE - BRAZILIAN",
-    "HISPANIC/LATINO - CUBAN",
-    "ASIAN - KOREAN",
-    "AMERICAN INDIAN/ALASKA NATIVE",
-    "CARIBBEAN ISLAND",
-    "UNABLE TO OBTAIN",
-    "ASIAN",
-    "HISPANIC OR LATINO",
+    "American Indian or Alaska Native",
+    "White or Caucasian",
+    "Asian",
+    "Black or African American",
+    "Native Hawaiian or Other Pacific Islander",
+    "Declined to Answer",
+    "Unknown",
+    "Other",
 ]
 
 fake = Faker()
@@ -64,25 +31,28 @@ site_id = str(uuid.uuid4()).replace("-", "")
 
 for x in range(20):
     sex_salt = random.choice(["M", "F"])
+    eths = []
+    ethnicity = random.choice(ethnicity_list)
     age = randint(15, 85)
-    dob = moment.utcnow().subtract(years=age).strftime("%Y-%m-%d")
-    patient_id = str(uuid.uuid4()).replace("-", "")
+    dob = fake.iso8601()
+    patient_id = random.randint(11111, 99999999)
     patient = mdm.patient_fields
     note = mdm.note_field
     patient["siteId"] = site_id
-    patient["ptMrn"] = patient_id
+    patient["PT_MRN"] = patient_id
     if "M" in sex_salt:
         patient["firstName"] = fake.first_name_male()
     elif "F" in sex_salt:
         patient["firstName"] = fake.first_name_female()
     patient["lastName"] = fake.last_name()
     patient["dob"] = dob
-    patient["ethnicity"] = random.choice(ethnicity_list)
     patient["sex"] = sex_salt
+    # patient["ethnicity"] = random.choice(ethnicity_list)
     patient["zip"] = fake.postcode_in_state(state_abbr="CA")
     patient["status"] = "Alive"
     note["siteId"] = site_id
-    note["ptMrn"] = patient_id
+    note["PT_MRN"] = patient_id
+    note["noteFirstSignDttm"] = fake.iso8601()
     note["noteText"] = "sample file created for ingestion testing perposes"
     patient_db_cur.insert_record(payload=patient)
     notes_db_cur.insert_record(payload=note)
