@@ -7,8 +7,8 @@ class Mimic(object):
     """Mimic Fields"""
 
     cpt_fields = {
-        "rowId": "",
-        "subjectId": "",
+        "ROW_ID": "",
+        "SUBJECT_ID": "",
         "hadmId": "",
         "costCenter": "",
         "chartDate": "",
@@ -21,8 +21,8 @@ class Mimic(object):
         "description": "",
     }
     admission_fields = {
-        "rowId": "",
-        "subjectId": "",
+        "ROW_ID": "",
+        "SUBJECT_ID": "",
         "hadmId": "",
         "admitTime": "",
         "dischTime": "",
@@ -42,7 +42,7 @@ class Mimic(object):
         "hasCharEventData": "",
     }
     d_lab_item_fields = {
-        "rowId": "",
+        "ROW_ID": "",
         "itemId": "",
         "label": "",
         "fluid": "",
@@ -50,18 +50,18 @@ class Mimic(object):
         "loincCode": "",
     }
 
-    icd9_fields = {"rowId": "", "icd9Code": "", "shortTitle": "", "longTitle": ""}
+    icd9_fields = {"ROW_ID": "", "icd9Code": "", "shortTitle": "", "longTitle": ""}
 
     iccd_diagnosis_fields = {
-        "rowId": "",
-        "subjectId": "",
+        "ROW_ID": "",
+        "SUBJECT_ID": "",
         "hadmId": "",
         "seqNum": "",
         "icd9Code": "",
     }
     icu_stay_fields = {
-        "rowId": "",
-        "subjectId": "",
+        "ROW_ID": "",
+        "SUBJECT_ID": "",
         "hadmId": "",
         "icuStayId": "",
         "dbSource": "",
@@ -74,8 +74,8 @@ class Mimic(object):
         "los": "",
     }
     physician_notes_fields = {
-        "rowId": "",
-        "subjectId": "",
+        "ROW_ID": "",
+        "SUBJECT_ID": "",
         "hadmId": "",
         "chartDate": "",
         "chartTime": "",
@@ -88,8 +88,8 @@ class Mimic(object):
     }
 
     lab_report_fields = {
-        "rowId": "",
-        "subjectId": "",
+        "ROW_ID": "",
+        "SUBJECT_ID": "",
         "hadmId": "",
         "itemId": "",
         "chartTime": "",
@@ -100,8 +100,8 @@ class Mimic(object):
     }
 
     prescription_fields = {
-        "rowId": "",
-        "subjectId": "",
+        "ROW_ID": "",
+        "SUBJECT_ID": "",
         "hadmId": "",
         "icuStayId": "",
         "startDate": "",
@@ -130,12 +130,12 @@ class Mimic(object):
         "specialty": "",
     }
     patient_fields = {
-        "rowId": "",
-        "subjectId": "",
-        "gender": "",
-        "dateOfBirth": "",
+        "ROW_ID": "",
+        "SUBJECT_ID": "",
+        "GENDER": "",
+        "DATE_OF_BIRTH": "",
         "dateOfDeath": "",
-        "dodHospital": "",
-        "dodSSN": "",
-        "expireFlag": "",
+        "DOD_HOSPITAL": "",
+        "DOD_SSN": "",
+        "EXPIRE_FLAG": "",
     }
