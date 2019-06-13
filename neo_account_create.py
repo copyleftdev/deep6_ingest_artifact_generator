@@ -3,7 +3,7 @@ import hashlib
 import uuid
 
 
-driver = GraphDatabase.driver("bolt://neo1.qa1.deep6.ai:7687", auth=("neo4j", "Sk3Iy8TEuqEOnzPM3Otg"))
+driver = GraphDatabase.driver("bolt://neo1.qa1.deep6.ai:7687", auth=("neo4j", "removed"))
 
 
 def hash_pass(password):
