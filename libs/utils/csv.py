@@ -4,10 +4,10 @@ import csv
 class Writer(object):
     """Class to write dictionary to csv file"""
 
-    def save(self, record, file_loc):
+    def save(self, records, file_loc):
         """save method"""
-        keys = record[0].keys()
+        keys = records[0].keys()
         with open(file_loc, "w") as outcsv:
             writer = csv.DictWriter(outcsv, keys)
             writer.writeheader()
-            writer.writerows(record)
+            writer.writerows(records)
